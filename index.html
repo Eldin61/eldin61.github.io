@@ -1,39 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css.css" rel="stylesheet" type="text/css"/>
+        <title>Portfolio</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="static/main.css">
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
-    <body>
-        <div id="everything">
-            <div id="menubalk">
-                <ul>
-                    <li class="menulijst">Home</li>
-                    <li class="menulijst">Portfolio</li>
-                    <li class="menulijst">Contact</li>
-                </ul>
+    <body style="background-color: #EEEEEE;">
+        <div class="jumbotron" id="eldinJumbo">
+            <ul class="eHoriList">
+                <li class="eActive"><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="container" id="contImg">
+                <img class="img-circle img-responsive" id="eldinImg" style="width: 250px; height: 250px;" src="resources/images/donkey.jpg"/>
+                <h2 id="eldinH2">Eldin Habibovic</h2>
+                <h4 id="eldinH2">Software developer</h4>
             </div>
-            <div id="header">
-                <div id="circle">
-                    <div id="overmijdiv">
-                        <h3>Over mij!</h3>
-                        <p>lalalalalalalallalaallaa
-                        lalalallalalalalalallalalalaal
-                        lalallalala</p>
-                    </div>
-                    <img id="headerpic" src="http://i26.photobucket.com/albums/c149/eldin33/new-york-night-city-view-5-1024x576_zpsded0629c.jpg" alt="picture"/>
-                </div>
-                <p id="overmij">Lees meer over mij!</p>
-            </div>
-            <div id="content">
-                <div id="content1" class="inline"><span>Project Web</span></div>
-                <div id="content2" class="inline"><span>Project Game</span></div>
-                <div id="content3" class="inline"><span>Project Data</span></div>
-                <div id="content4" class="inline"><span>Project Android</span></div>
-            </div>
-            <div id="footer"></div>
+            <span class="glyphicon glyphicon-chevron-down" style="color: white; font-size: 1.5em; display: block; text-align: center; margin-top: 5%;"></span>
         </div>
+    <div class="container" id="aboutMeCard" style="background-color: white;">
+        <h3 style="text-align: center;">Over mij</h3>
+        <div style="background-color: #c3c3c3; height: 1px; width: 80%; margin: 0 auto;"></div>
+        <p class="overMij">Tweede jaars informatica student die graag web-applicaties maakt. Ik ontwikkel graag de back end met Scala en Java. Momenteel gebruik ik de play-framework maar ik ben zeer geïnteresseerd in nieuwe technieken en wil ze graag leren gebruiken.</br></br>
+          Ik werk graag in teams omdat dat lekker persoonlijk is. Je kan goed op elkaar inspelen in teams en zo nodig elkaar helpen mochten er problemen voorkomen.
+          Zelf ben ik heel enthousiast over koken, gamen, programmeren en Linux. Ik ben een nuchter en open persoon, daardoor zeg ik altijd wat ik echt vind. Volgens mijn teamgenoten in mijn projecten ben ik het leidende type.</br></br>
+          Met anderen sparren over verschillende onderwerpen vind ik leuk en doe het ook graag. Dit houd mijn partner en mijn eigen kennis op peil en houd ons beiden scherp. Verder ben ik competitief en strijd graag om de beste te zijn.</p>
+    </div>
+    <div class="container" id="aboutMeCard" style="background-color: white; margin-top: 3%; margin-bottom: 3%;">
+      <h3 style="text-align: center;">Contact met mij</h3>
+      <div style="background-color: #c3c3c3; height: 1px; width: 80%; margin: 0 auto;"></div>
+      <div class="container" style="width: 80%;">
+        <form action="http://formspree.io/your@email.com" method="POST">
+          <fieldset>
+              <div class="form-group">
+                  <label for="inputName" class="col-md-2 control-label">Naam</label>
+                  <div class="col-md-12">
+                      <input type="Name" class="form-control" id="inputName"
+                             placeholder="Uw Naam" name="name">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="inputEmail" class="col-md-2 control-label">Email</label>
+                  <div class="col-md-12">
+                      <input type="Name" class="form-control" id="inputEmail"
+                             placeholder="Uw Email" name="_replyto">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="textArea" class="col-md-2 control-label">Uw bericht</label>
+                  <div class="col-md-12">
+                      <textarea class="form-control" rows="3" id="textArea" name="bericht"></textarea>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-md-10">
+                      <button type="submit" class="btn btn-raised btn-inverse" value="Send">Submit</button>
+                  </div>
+              </div>
+              <input type="hidden" name="_next" value="eldin61.github.io" />
+              <input type="text" name="_gotcha" style="display:none" />
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
     </body>
 </html>
